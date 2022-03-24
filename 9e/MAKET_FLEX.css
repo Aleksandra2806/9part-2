@@ -1,0 +1,124 @@
+header {
+    text-align: center; 
+    padding: 20px; 
+    background-color: rgba(0, 183, 255, 0.562);
+    color: blue; 
+    font-weight: bold;
+}
+menu {
+    background: rgb(253, 255, 144);
+    align-items: center;
+    margin: 0;
+    flex-basis: 220px;
+}
+a:hover {
+    color:red;
+}
+main {
+    background: url(ball.png) right top repeat-y;
+    background-size: 50px 50px;
+    background-color: white; 
+    flex-basis: 68%;
+    flex-grow: 1;
+}
+h1 {
+    margin: auto;
+}
+img {
+    float: left;
+    margin: 10px;
+    max-width: 50%;
+}
+aside {
+    background: rgb(166, 255, 144);
+    flex-basis: 200px;
+    padding: 10px;
+}
+footer {
+    text-align: center; 
+    padding: 20px; 
+    background-color: rgba(0, 183, 255, 0.562);
+    color: blue; 
+    font-weight: bold;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.text-menu {
+    font-weight: bold;
+}
+.color-white {
+    background: rgba(255, 255, 255, 0.7);
+}
+.text-main-column {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.text-news {
+    font-size: 13px;
+    padding: 0;
+    font-style: italic;
+    font-weight: bold;
+}
+.text-news:hover {
+    color: blue;
+}
+@media all and (max-width: 1520px) {
+    aside {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+@media all and (max-width: 835px) {
+    main {
+        flex-basis: 45%;
+    }
+}
+@media all and (max-width: 496px) {
+    menu {
+        flex-basis: 100%;
+    }
+}
+@media all and (max-width: 278px) {
+    img {
+        max-width: 95%;
+    }
+    main {
+        background: white;
+    }
+    .text-main-column {
+        text-align: justify;
+    }
+}
+@media all and (max-width: 230px) {
+    ul {
+        list-style: none;
+        padding-left: 10;
+    }
+    li {
+        padding-right: 10;
+    }
+    ul li {
+        display: inline-block;
+    }
+    li {
+        padding-right: 10;
+    }
+    header,
+    aside,
+    footer {
+        display: none;
+    }
+    menu,
+    main {
+        background: none;
+        display: inline;
+        padding: 0;
+    }
+    .flex {
+        flex-direction: column-reverse;
+    }
+}
